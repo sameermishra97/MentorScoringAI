@@ -1,35 +1,10 @@
-# 📘 Documentation — Mentor Scoring AI (Round 2)
+gradio==4.15.0
+transformers
+torch
+textstat
+empath
+SpeechRecognition
+matplotlib
+numpy
 
-This folder contains all supporting documentation, diagrams, and visual assets related to the **Mentor Scoring AI** project.  
-These materials help reviewers, mentors, and developers understand the system’s structure, workflow, and implementation progress.
-
----
-
-## 📂 Contents
-
-| File | Description |
-|------|--------------|
-| **architecture.png** | Visual diagram of the complete system workflow — showing data flow from input to AI processing to result visualization. |
-| **sample_output.png** | Screenshot of the working Gradio prototype showing input interface and scoring results. |
-| **summary.pdf** | Two-page technical report submitted for Round 2 of the UpSkill India Challenge (Techfest IIT Bombay). |
-| **README.md** | This index file summarizing documentation contents. |
-
----
-
-## 🧩 Purpose
-This documentation folder provides:
-- Visual representation of project architecture  
-- Proof of functional prototype  
-- Technical summary for evaluation  
-- Transparency and clarity in AI workflow  
-
----
-
-## 🧠 Author Information
-**Project:** Mentor Scoring AI  
-**Team:** NeuroLearn  
-**Developer:** Sameer Mishra – IIT Madras (BS in Data Science & Applications)  
-**Event:** UpSkill India Challenge, Techfest IIT Bombay 2025  
-
----
 
