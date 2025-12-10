@@ -1,0 +1,57 @@
+📘 Mentor Scoring AI – Technical Summary (Round 2 Submission)
+Team: NeuroLearn
+Institution: IIT Madras
+Member: Sameer Mishra
+Challenge: UpSkill India Challenge – Techfest IIT Bombay 2025
+________________________________________
+🧩 1. Problem Statement
+Assessing teaching quality at scale is difficult, subjective, and time-intensive. Institutions need an automated and unbiased mechanism to evaluate mentors based on clarity, engagement, tone, and conceptual depth from recorded sessions or transcripts.
+________________________________________
+🤖 2. Objective
+To develop an AI-powered evaluation system that analyzes mentor explanations and provides:
+•	Quantitative scores (clarity, tone, depth, engagement)
+•	Personalized feedback and insights
+•	Optional speech-to-text conversion for audio mentors
+________________________________________
+⚙️ 3. Technical Architecture
+The system follows this workflow:
+Input (Text/Audio) → Preprocessing → AI Scoring Engine (TextStat + Empath + Transformers) → Score Aggregation → Visualization (Radar Chart) → Gradio Interface Output
+(Refer to architecture.png for the full system diagram.)
+________________________________________
+🧠 4. Implementation Highlights
+•	Modular code structure (src/ with mentor_scoring_ai.py, helper_functions.py, app.py)
+•	Integrated Hugging Face sentiment model for tone analysis
+•	Empath lexicon for topic-depth evaluation
+•	TextStat for readability / clarity
+•	Optional speech-to-text via SpeechRecognition
+•	Gradio front-end for live AI feedback
+________________________________________
+📊 5. Results
+The prototype successfully evaluates text and audio inputs, providing:
+•	Real-time mentor scoring (0-100 scale)
+•	Interactive radar chart visualization
+•	Insightful qualitative feedback
+(See sample_output.png for example output.)
+________________________________________
+🧾 6. Challenges & Solutions
+Challenge	Approach
+Lack of labeled mentor data	Used unsupervised readability & emotion metrics
+Audio accuracy issues	Added text fallback and smoothing
+Model latency	Truncated long text to improve inference speed
+________________________________________
+🚀 7. Roadmap
+•	Add emotion detection from voice (MFCC features)
+•	Fine-tune models on mentor-specific datasets
+•	Build an institutional dashboard
+•	Deploy scalable FastAPI backend on Render
+________________________________________
+🏁 8. Conclusion
+Mentor Scoring AI demonstrates how AI can enhance education by providing consistent, data-driven feedback to teachers and mentors.
+This functional prototype covers ~80% of the complete system pipeline and lays the foundation for future large-scale deployment.
+________________________________________
+📩 References
+•	Hugging Face Transformers
+•	TextStat Documentation
+•	Empath Lexicon
+•	Gradio Framework
+•	SpeechRecognition Python API
